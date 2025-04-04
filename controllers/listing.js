@@ -50,13 +50,13 @@ module.exports.renderSearchedListing  = async(req,res)=>{
         req.flash("error","Listing you requested for does not exist!");
         res.redirect("/Listings");
     }
-    res.render("listings/index.ejs",{allListings});
+    res.render("Listings/index.ejs",{allListings});
 }
 
 module.exports.renderCategory = async(req,res)=>{
     let {name} = req.params;
     let allListings = await Listing.find({category: name});
-    res.render("listings/index.ejs",{allListings});
+    res.render("Listings/index.ejs",{allListings});
 }
 
 module.exports.renderEditForm = async (req,res)=>{
