@@ -43,6 +43,22 @@ module.exports.showListing = async(req,res)=>{
     res.render("Listings/show.ejs",{listing});
 }
 
+module.exports.renderSearchedListing  = async(req,res)=>{
+    let {q} = req.query;
+    let allListings = await Listing.find({$or:[{title: {$regex: q, $options: 'i'} },{category: {$regex: q, $options: 'i'}}]});
+    if(!allListings){
+        req.flash("error","Listing you requested for does not exist!");
+        res.redirect("/Listings");
+    }
+    res.render("listings/index.ejs",{allListings});
+}
+
+module.exports.renderCategory = async(req,res)=>{
+    let {name} = req.params;
+    let allListings = await Listing.find({category: name});
+    res.render("listings/index.ejs",{allListings});
+}
+
 module.exports.renderEditForm = async (req,res)=>{
     let { id} = req.params;
     let listing = await Listing.findById(id);
@@ -68,6 +84,7 @@ module.exports.updateListing = async (req,res,next)=>{
     }
 
     req.flash("success","Listing Updated!");
+    console.log(id);
     res.redirect(`/listings/${id}`);
 }
 

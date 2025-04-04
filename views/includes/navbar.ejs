@@ -1,12 +1,12 @@
 <style>
   .search-btn{
-    background-color: #fe424d;
+    background-color: #4169e1;
     color:#fff;
     border-radius: 25px;
     padding: 0 1rem 0 1rem;
   }
   .search-btn:hover{
-    background-color: #fe424d;
+    background-color: #4169e1;
     color:#fff;
 
   }
@@ -33,14 +33,14 @@
       </div>
 
       <div class="navbar-nav ms-auto">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 search-input" type="search" placeholder="search-destinations">
+        <form class="d-flex" role="search" action="/listings/search" method="get">
+          <input class="form-control me-2 search-input" type="search" name="q"  placeholder="search-destinations">
           <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
         </form>
       </div>
 
       <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="/listings/new">airbnb your home</a>
+        <a class="nav-link" href="/listings/new">add your place</a>
         <% if(!currUser){%>
           <a class="nav-link" href="/login"><b>Log in</b></a>
           <a class="nav-link" href="/signup"><b>Sign Up</b></a>

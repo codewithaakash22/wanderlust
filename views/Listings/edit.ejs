@@ -35,11 +35,26 @@
         <div class="invalid-feedback">Price should be valid</div>
         </div>
 
-        <div class="mb-3 col-md-8">
+        <div class="mb-3 col-md-4">
         <label for="country" class="label-form">Country</label>
         <input type="text" name="listing[country]" value="<%=listing.country%>" id="country" class="form-control" required>
         <div class="invalid-feedback">Country name must be required.</div>
         </div>
+
+        <div class="mb-3 col-md-4">
+            <label for="status" class="label-form">Category:</label>
+            <select name="listing[category]" id="status" class="form-select">
+                <option value="<%=listing.category%>" ><%=listing.category%></option>
+                <option value="Temple">Temple</option>
+                <option value="Garden">Garden</option>
+                <option value="Fort">Fort</option>
+                <option value="Palace">Palace</option>
+                <option value="Wildlife">Wildlife</option>
+                <option value="Lake">Lake</option>
+                <option value="Monument">Monument</option>
+                <option value="Museum">Museum</option>
+            </select>
+            </div>
         </div>
 
         <div class="mb-3">

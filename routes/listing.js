@@ -14,6 +14,9 @@ router.route("/")
 .get( wrapAsync(listingController.index))
 .post(IsLoggedIn,upload.single('listing[image]'), validateListing, wrapAsync(listingController.createListing)); 
 
+/*------------Search Router-------------*/
+router.get("/search",wrapAsync(listingController.renderSearchedListing))
+
 /*-------------New Route-----------------*/
 router.get("/new",IsLoggedIn, listingController.renderNewForm);
 
@@ -26,23 +29,7 @@ router.route("/:id")
 /*-------------Edit Route-----------------*/
 router.get("/:id/edit",IsLoggedIn, isOwner, wrapAsync(listingController.renderEditForm));
 
-
-/*-------------Index Route-----------------*/
-// router.get("/", wrapAsync(listingController.index));
-
-/*-------------create new listing -----------------*/
-// router.post("/",IsLoggedIn, validateListing, wrapAsync(listingController.createListing));
-
-/*-------------Show Route-----------------*/
-// router.get("/:id",wrapAsync(listingController.showListing));
-
-
-
-/*-------------Update Route-----------------*/
-// router.put("/:id",IsLoggedIn,isOwner, validateListing, wrapAsync(listingController.updateListing));
-
-/*-------------Delete Route-----------------*/
-// router.delete("/:id",IsLoggedIn, isOwner, wrapAsync(listingController.destroyListing));
-
+/*------------Category Route-------------*/
+router.get("/category/:name",wrapAsync(listingController.renderCategory));
 
 module.exports = router;
