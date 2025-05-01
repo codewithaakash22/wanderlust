@@ -1,0 +1,58 @@
+@media only screen and (max-width: 770px) {
+.navbar {
+    height: 100%;
+}
+
+.nav-explore{
+    display:none;
+}
+
+.nav-link{
+    padding-left: 1.5rem;
+}
+
+.search-bar{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+.navbar-collapse{
+    margin-top:0.5rem;
+}
+
+
+.f-info {
+    text-align: center;
+    height: 5rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+#map{ 
+    height: 200px;
+    width: 100%;
+}
+
+.card{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width:87%;
+}
+
+.offset-3{
+    margin-left:10%;
+    width:80%;
+}
+
+.edit-btn{
+    width: 20%;
+}
+
+.responve-image{
+    width:50%;
+}
+
+}
