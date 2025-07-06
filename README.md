@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/00e2da03-18cd-4d4a-9a0e-f39374a4999e)# 🌍 Wanderlust – Airbnb Clone
+# 🌍 Wanderlust – Airbnb Clone
 
 **Wanderlust** is a full-stack travel web application inspired by Airbnb, built to explore unique stays and travel destinations. It allows users to view, filter, and manage property listings with beautiful UI and interactive maps.
 
