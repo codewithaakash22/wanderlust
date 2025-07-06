@@ -27,7 +27,7 @@
 ### Frontend
 - HTML5, CSS3, JavaScript
 - **EJS Templating Engine**
-- Tailwind CSS
+- Bootstrap
 
 ### Backend
 - **Node.js**, **Express.js**
@@ -43,7 +43,11 @@
 
 ## 📸 Screenshots
 
-> *You can add some screenshots here showing homepage, map, listing page, etc.*
+> ![image](https://github.com/user-attachments/assets/f5124d96-5053-4475-8148-d973f30cbbc4)
+> ![image](https://github.com/user-attachments/assets/756e0c8a-b70b-4448-92ad-7d5a71838877)
+> ![image](https://github.com/user-attachments/assets/ab1126d9-1f9f-4ea1-a41e-8b9789a49204)
+
+
 
 ---
 
