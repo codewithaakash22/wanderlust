@@ -17,7 +17,7 @@
 - 🖼️ Image upload via **Cloudinary**
 - 📂 Filter listings by location, category, and price
 - 🏡 Add and manage your own property listings
-- 📱 Fully responsive design using **Tailwind CSS**
+- 📱 Fully responsive design using **Bootsrap**
 - ✏️ Edit or delete listings (only for authorized users)
 
 ---
